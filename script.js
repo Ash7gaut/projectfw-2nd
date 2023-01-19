@@ -2,7 +2,6 @@
 // Partie Home
 
 
-
 gsap.fromTo("#text-white", {
     opacity: 0,
     x: -1000,

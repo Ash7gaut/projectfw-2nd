@@ -435,7 +435,6 @@ h6 {
 
 .section-mobile {
     position: relative;
-    border: 1px solid red;
 }
 
 #svg {
@@ -443,8 +442,8 @@ h6 {
     position: absolute;
     right: 717px;
     width: 50%;
-    top: 220px;
-    /* visibility: hidden; */
+    top: 215px;
+    visibility: hidden;
 }
 
 
@@ -615,6 +614,7 @@ h6 {
     flex-wrap: wrap;
     /* border: 1px solid red; */
     margin-bottom: 150px;
+    margin-top: 490px;
 }
 
 .row img {
@@ -648,9 +648,18 @@ h6 {
     max-width: 1075px;
     display: flex;
     flex-wrap: wrap;
-    margin-top: 220px;
+    /* margin-top: 220px; */
     justify-content: space-between;
 
+}
+
+.trigger-comm {
+    margin-top: 170px;
+    margin-bottom: 50px;
+}
+
+.hidden {
+    visibility: hidden;
 }
 
 .reviewtitle {
@@ -695,6 +704,7 @@ footer {
     color: white;
     background-color: #000;
     padding-bottom: 35px;
+    padding-top: 125px;
 
 }
 

@@ -67,6 +67,7 @@ gsap.to(".rose", {
 
 })
 
+
 gsap.to(".godance", {
     autoAlpha: 1,
     transition: 1.5,
@@ -100,7 +101,7 @@ gsap.fromTo(".thebest", {
 
 
 
-gsap.fromTo(".photo-1, .photo-2, .photo-3, .photo-7, .photo-8, .photo-9", {
+gsap.fromTo(".photo-1, .photo-2, .photo-3", {
     opacity: 0,
     x: -450,
 }, {
@@ -132,6 +133,23 @@ gsap.fromTo(".photo-4, .photo-5, .photo-6", {
 
     },
 })
+
+gsap.fromTo(".photo-7, .photo-8, .photo-9", {
+    opacity: 0,
+    x: -450,
+}, {
+    x: 0,
+    duration: 1.5,
+    opacity: 1,
+    scrollTrigger: {
+        trigger: ".photo-9",
+        start: "top 80%",
+        end: "bottom 80%",
+
+    },
+
+})
+
 
 // Partie Choisis ton plan
 
@@ -187,7 +205,6 @@ gsap.to(".bgblue", {
         trigger: ".starta",
         start: "top 60%",
         end: "bottom 30%",
-        markers: true,
         scrub: 1,
     }
 
@@ -293,7 +310,7 @@ gsap.fromTo(".comm1", {
     opacity: 1,
     duration: 1.3,
     scrollTrigger: {
-        trigger: ".comm1",
+        trigger: ".trigger-comm",
     }
 })
 
@@ -309,7 +326,7 @@ gsap.fromTo("#star1", {
     duration: 1.2,
     delay: 0.5,
     scrollTrigger: {
-        trigger: ".comm1",
+        trigger: ".trigger-comm",
         start: "top bottom",
         end: "bottom 80%",
         // markers: true,
@@ -327,7 +344,7 @@ gsap.fromTo("#star2", {
     delay: 0.8,
     opacity: 1,
     scrollTrigger: {
-        trigger: ".comm1",
+        trigger: ".trigger-comm",
         start: "top bottom",
         end: "bottom 80%",
         // markers: true,
@@ -345,7 +362,7 @@ gsap.fromTo("#star3", {
     delay: 1.1,
     opacity: 1,
     scrollTrigger: {
-        trigger: ".comm1",
+        trigger: ".trigger-comm",
         start: "top bottom",
         end: "bottom 80%",
         // markers: true,
@@ -363,7 +380,7 @@ gsap.fromTo("#star4", {
     delay: 1.4,
     opacity: 1,
     scrollTrigger: {
-        trigger: ".comm1",
+        trigger: ".trigger-comm",
         start: "top bottom",
         end: "bottom 80%",
         // markers: true,
@@ -381,7 +398,7 @@ gsap.fromTo("#star5", {
     delay: 1.7,
     opacity: 1,
     scrollTrigger: {
-        trigger: ".comm1",
+        trigger: ".trigger-comm",
         start: "top bottom",
         end: "bottom 80%",
         // markers: true,
@@ -400,7 +417,7 @@ gsap.fromTo(".comm2", {
     opacity: 1,
     duration: 1.3,
     scrollTrigger: {
-        trigger: ".comm1",
+        trigger: ".trigger-comm",
     }
 })
 
@@ -413,7 +430,7 @@ gsap.fromTo("#star6", {
     delay: 1.2,
     opacity: 1,
     scrollTrigger: {
-        trigger: ".comm1",
+        trigger: ".trigger-comm",
         start: "top bottom",
         end: "bottom 80%",
         // markers: true,
@@ -429,7 +446,7 @@ gsap.fromTo("#star7", {
     delay: 1.2,
     opacity: 1,
     scrollTrigger: {
-        trigger: ".comm1",
+        trigger: ".trigger-comm",
         start: "top bottom",
         end: "bottom 80%",
         // markers: true,
@@ -445,7 +462,7 @@ gsap.fromTo("#star8", {
     delay: 1.2,
     opacity: 1,
     scrollTrigger: {
-        trigger: ".comm1",
+        trigger: ".trigger-comm",
         start: "top bottom",
         end: "bottom 80%",
         // markers: true,
@@ -462,7 +479,7 @@ gsap.fromTo("#star9", {
     delay: 1.2,
     opacity: 1,
     scrollTrigger: {
-        trigger: ".comm1",
+        trigger: ".trigger-comm",
         start: "top bottom",
         end: "bottom 80%",
         // markers: true,
@@ -478,7 +495,7 @@ gsap.fromTo("#star10", {
     delay: 1.2,
     opacity: 1,
     scrollTrigger: {
-        trigger: ".comm1",
+        trigger: ".trigger-comm",
         start: "top bottom",
         end: "bottom 80%",
         // markers: true,
@@ -497,7 +514,7 @@ gsap.fromTo(".comm3", {
     opacity: 1,
     duration: 1.3,
     scrollTrigger: {
-        trigger: ".comm1",
+        trigger: ".trigger-comm",
     }
 })
 
@@ -512,7 +529,7 @@ gsap.fromTo("#star11", {
     duration: 1.2,
     delay: 2.4,
     scrollTrigger: {
-        trigger: ".comm1",
+        trigger: ".trigger-comm",
         start: "top bottom",
         end: "bottom 80%",
         // markers: true,
@@ -530,7 +547,7 @@ gsap.fromTo("#star12", {
     duration: 1.2,
     delay: 2.1,
     scrollTrigger: {
-        trigger: ".comm1",
+        trigger: ".trigger-comm",
         start: "top bottom",
         end: "bottom 80%",
         // markers: true,
@@ -548,7 +565,7 @@ gsap.fromTo("#star13", {
     duration: 1.2,
     delay: 1.8,
     scrollTrigger: {
-        trigger: ".comm1",
+        trigger: ".trigger-comm",
         start: "top bottom",
         end: "bottom 80%",
         // markers: true,
@@ -566,7 +583,7 @@ gsap.fromTo("#star14", {
     duration: 1.2,
     delay: 1.5,
     scrollTrigger: {
-        trigger: ".comm1",
+        trigger: ".trigger-comm",
         start: "top bottom",
         end: "bottom 80%",
         // markers: true,
@@ -584,7 +601,7 @@ gsap.fromTo("#star15", {
     delay: 1.2,
     duration: 1.2,
     scrollTrigger: {
-        trigger: ".comm1",
+        trigger: ".trigger-comm",
         start: "top bottom",
         end: "bottom 80%",
         // markers: true,

@@ -2,15 +2,47 @@
 // Partie Home
 
 
+
+gsap.fromTo("#text-white", {
+    opacity: 0,
+    x: -1000,
+}, {
+    x: 0,
+    opacity: 1,
+    duration: 2,
+})
+
+gsap.fromTo(".p-white", {
+    opacity: 0,
+    x: -1000,
+}, {
+    x: 0,
+    opacity: 1,
+    duration: 2,
+    delay: 0.7,
+})
+
+gsap.fromTo(".btn-try", {
+    opacity: 0,
+    x: -1000,
+}, {
+    x: 0,
+    opacity: 1,
+    duration: 2,
+    delay: 0.7,
+})
+
+
 gsap.fromTo(".news", {
-    opacity:0,
+    opacity: 0,
     y: 100,
 }, {
     y: 0,
-    duration:1.5, 
-    opacity:1,
+    duration: 1.5,
+    opacity: 1,
+    delay: 3,
     scrollTrigger: {
-        trigger: ".news",
+        trigger: ".p-white",
         start: "top 80%",
         end: "bottom 80%",
 
@@ -24,8 +56,8 @@ gsap.fromTo(".news", {
 
 
 gsap.to(".rose", {
-    autoAlpha:1,
-    transition:1.5,
+    autoAlpha: 1,
+    transition: 1.5,
     scrollTrigger: {
         trigger: ".rose",
         // markers: true,
@@ -36,8 +68,8 @@ gsap.to(".rose", {
 })
 
 gsap.to(".godance", {
-    autoAlpha:1,
-    transition:1.5,
+    autoAlpha: 1,
+    transition: 1.5,
     scrollTrigger: {
         trigger: ".rose",
         // markers: true,
@@ -52,12 +84,12 @@ gsap.to(".godance", {
 
 
 gsap.fromTo(".thebest", {
-    opacity:0,
-    y:-550,
+    opacity: 0,
+    y: -550,
 }, {
     y: 0,
-    opacity:1,
-    duration:1.2,
+    opacity: 1,
+    duration: 1.2,
     scrollTrigger: {
         trigger: ".photo-1",
         start: "top bottom",
@@ -68,13 +100,13 @@ gsap.fromTo(".thebest", {
 
 
 
-gsap.fromTo(".photo-1", {
-    opacity:0,
+gsap.fromTo(".photo-1, .photo-2, .photo-3, .photo-7, .photo-8, .photo-9", {
+    opacity: 0,
     x: -450,
 }, {
     x: 0,
-    duration:1.5, 
-    opacity:1,
+    duration: 1.5,
+    opacity: 1,
     scrollTrigger: {
         trigger: ".photo-6",
         start: "top 80%",
@@ -84,45 +116,15 @@ gsap.fromTo(".photo-1", {
 
 })
 
-gsap.fromTo(".photo-2", {
-    opacity:0,
-    x: -450,
-}, {
-    x: 0,
-    duration:1.5, 
-    opacity:1,
-    scrollTrigger: {
-        trigger: ".photo-6",
-        start: "top 80%",
-        end: "bottom 80%",
 
-    },
- 
 
-})
-
-gsap.fromTo(".photo-3", {
-    opacity:0,
-    x: -450,
-}, {
-    x: 0,
-    duration:1.5, 
-    opacity:1,
-    scrollTrigger: {
-        trigger: ".photo-6",
-        start: "top 80%",
-        end: "bottom 80%",
-
-    },
-})
-
-gsap.fromTo(".photo-4", {
-    opacity:0,
+gsap.fromTo(".photo-4, .photo-5, .photo-6", {
+    opacity: 0,
     x: 450,
 }, {
     x: 0,
-    duration:1.5, 
-    opacity:1,
+    duration: 1.5,
+    opacity: 1,
     scrollTrigger: {
         trigger: ".photo-9",
         start: "top bottom",
@@ -130,118 +132,70 @@ gsap.fromTo(".photo-4", {
 
     },
 })
-
-gsap.fromTo(".photo-5", {
-    opacity:0,
-    x: 450,
-}, {
-    x: 0,
-    duration:1.5, 
-    opacity:1,
-    scrollTrigger: {
-        trigger: ".photo-9",
-        start: "top bottom",
-        end: "bottom 80%",
-
-    },
-})
-
-gsap.fromTo(".photo-6", {
-    opacity:0,
-    x: 450,
-}, {
-    x: 0,
-    duration:1.5, 
-    opacity:1,
-    scrollTrigger: {
-        trigger: ".photo-9",
-        start: "top bottom",
-        end: "bottom 80%",
-
-    },
-})
-
-gsap.fromTo(".photo-7", {
-    opacity:0,
-    x: -450,
-}, {
-    x: 0,
-    duration:1.5, 
-    opacity:1,
-    scrollTrigger: {
-        trigger: ".photo-9",
-        start: "top bottom",
-        end: "bottom 80%",
-
-    },
-})
-
-gsap.fromTo(".photo-8", {
-    opacity:0,
-    x: -450,
-}, {
-    x: 0,
-    duration:1.5, 
-    opacity:1,
-    scrollTrigger: {
-        trigger: ".photo-9",
-        start: "top bottom",
-        end: "bottom 80%",
-
-    },
-})
-
-gsap.fromTo(".photo-9", {
-    opacity:0,
-    x: -450,
-}, {
-    x: 0,
-    duration:1.5, 
-    opacity:1,
-    scrollTrigger: {
-        trigger: ".photo-9",
-        start: "top bottom",
-        end: "bottom 80%",
-
-    },
-})
-
 
 // Partie Choisis ton plan
 
 
+gsap.to("#tablet", {
+
+    motionPath: {
+        path: "#svg path",
+        align: "#svg path",
+        alignOrigin: [0.5, 0.5],
+    },
+    ease: "none",
+    scrollTrigger: {
+        trigger: "#tablet",
+        start: "top 65%",
+        end: "bottom 90%",
+        scrub: 1,
+    },
+});
+
 gsap.fromTo(".choosetitle", {
-    opacity:0,
-    x:-50,
-    y:-50,
+    opacity: 0,
+    x: -50,
+    y: -50,
 }, {
     x: 0,
     y: 0,
-    opacity:1,
-    duration:1.2,
+    opacity: 1,
+    duration: 1.2,
     scrollTrigger: {
-        trigger: "#mensuel",
+        trigger: ".choosetitle",
         start: "top bottom",
         end: "bottom 80%",
         // markers: true,
     }
 })
 
+const timeline = gsap.timeline({ repeat: -1 });
+timeline.to(".bgblue", {
+    scale: 1.05,
+    duration: 3.5,
+})
+timeline.to(".bgblue", {
+    scale: 1,
+    duration: 3.5,
+})
+
+
+
 gsap.to(".bgblue", {
-    scale:1.14,
-    transition:4.5,
+    y: -50,
     scrollTrigger: {
-        trigger: ".choosetitle",
-        // markers: true,
-        start: "top 75%",
-        end: "bottom 90%",
+        trigger: ".starta",
+        start: "top 60%",
+        end: "bottom 30%",
+        markers: true,
+        scrub: 1,
     }
 
 })
 
 gsap.to("#monthly", {
     backgroundColor: "#E1E1E1",
-    transition:5,
+    transition: 5,
 
 })
 
@@ -251,7 +205,7 @@ gsap.to("#monthly", {
 
 gsap.to(".vibzmobile", {
     autoAlpha: 1,
-    duration:4,
+    duration: 4,
     scrollTrigger: {
         trigger: ".vibzmobile"
     }
@@ -262,7 +216,7 @@ gsap.fromTo(".apples", {
     x: -250,
 }, {
     x: 0,
-    duration:2.5, 
+    duration: 1.8,
     scrollTrigger: {
         trigger: ".apples",
         start: "top 80%",
@@ -275,7 +229,7 @@ gsap.fromTo(".googlep", {
     x: 250,
 }, {
     x: 0,
-    duration:2.5, 
+    duration: 1.8,
     scrollTrigger: {
         trigger: ".apples",
         start: "top 80%",
@@ -287,7 +241,7 @@ gsap.fromTo(".googlep", {
 
 gsap.to(".undertitle1", {
     autoAlpha: 1,
-    duration:4,
+    duration: 4,
     scrollTrigger: {
         trigger: ".vibzmobile"
     }
@@ -296,14 +250,14 @@ gsap.to(".undertitle1", {
 
 
 gsap.fromTo(".undertitle", {
-    opacity:0,
-    x:50,
-    y:50,
+    opacity: 0,
+    x: 50,
+    y: 50,
 }, {
     x: 0,
     y: 0,
-    opacity:1,
-    duration:1.2,
+    opacity: 1,
+    duration: 1.2,
     scrollTrigger: {
         trigger: "#mensuel",
         start: "top bottom",
@@ -316,24 +270,44 @@ gsap.fromTo(".undertitle", {
 // Logo entreprise + Avis/Commentaires
 
 
+
+
+
+
 gsap.to(".logoentr", {
     autoAlpha: 1,
-    duration:4.5,
+    duration: 4.5,
     scrollTrigger: {
         trigger: ".logoentr"
     }
 
 })
 
+// Premier commentaire/avis
+
+gsap.fromTo(".comm1", {
+    opacity: 0,
+    y: 300,
+}, {
+    y: 0,
+    opacity: 1,
+    duration: 1.3,
+    scrollTrigger: {
+        trigger: ".comm1",
+    }
+})
+
+
 gsap.fromTo("#star1", {
-    opacity:0,
-    x:-50,
-    y:-50,
+    opacity: 0,
+    x: -50,
+    y: -50,
 }, {
     x: 0,
     y: 0,
-    opacity:1,
-    duration:1.2,
+    opacity: 1,
+    duration: 1.2,
+    delay: 0.5,
     scrollTrigger: {
         trigger: ".comm1",
         start: "top bottom",
@@ -343,15 +317,15 @@ gsap.fromTo("#star1", {
 })
 
 gsap.fromTo("#star2", {
-    opacity:0,
-    x:-50,
-    y:-50,
+    opacity: 0,
+    x: -50,
+    y: -50,
 }, {
     x: 0,
     y: 0,
-    duration:1.2,
-    delay:0.3,
-    opacity:1,
+    duration: 1.2,
+    delay: 0.8,
+    opacity: 1,
     scrollTrigger: {
         trigger: ".comm1",
         start: "top bottom",
@@ -361,15 +335,15 @@ gsap.fromTo("#star2", {
 })
 
 gsap.fromTo("#star3", {
-    opacity:0,
-    x:-50,
-    y:-50,
+    opacity: 0,
+    x: -50,
+    y: -50,
 }, {
     x: 0,
     y: 0,
-    duration:1.2,
-    delay:0.6,
-    opacity:1,
+    duration: 1.2,
+    delay: 1.1,
+    opacity: 1,
     scrollTrigger: {
         trigger: ".comm1",
         start: "top bottom",
@@ -379,15 +353,15 @@ gsap.fromTo("#star3", {
 })
 
 gsap.fromTo("#star4", {
-    opacity:0,
-    x:-50,
-    y:-50,
+    opacity: 0,
+    x: -50,
+    y: -50,
 }, {
     x: 0,
     y: 0,
-    duration:1.2,
-    delay:0.9,
-    opacity:1,
+    duration: 1.2,
+    delay: 1.4,
+    opacity: 1,
     scrollTrigger: {
         trigger: ".comm1",
         start: "top bottom",
@@ -397,15 +371,15 @@ gsap.fromTo("#star4", {
 })
 
 gsap.fromTo("#star5", {
-    opacity:0,
-    x:-50,
-    y:-50,
+    opacity: 0,
+    x: -50,
+    y: -50,
 }, {
     x: 0,
     y: 0,
-    duration:1.2,
-    delay:1.2,
-    opacity:1,
+    duration: 1.2,
+    delay: 1.7,
+    opacity: 1,
     scrollTrigger: {
         trigger: ".comm1",
         start: "top bottom",
@@ -414,13 +388,30 @@ gsap.fromTo("#star5", {
     }
 })
 
+
+// Deuxieme commentaire/avis
+
+gsap.fromTo(".comm2", {
+    opacity: 0,
+    y: 300,
+}, {
+    y: -100,
+    delay: 0.4,
+    opacity: 1,
+    duration: 1.3,
+    scrollTrigger: {
+        trigger: ".comm1",
+    }
+})
+
 gsap.fromTo("#star6", {
-    opacity:0,
-    x:72,
+    opacity: 0,
+    x: 72,
 }, {
     x: 0,
-    duration:2,
-    opacity:1,
+    duration: 2,
+    delay: 1.2,
+    opacity: 1,
     scrollTrigger: {
         trigger: ".comm1",
         start: "top bottom",
@@ -430,12 +421,13 @@ gsap.fromTo("#star6", {
 })
 
 gsap.fromTo("#star7", {
-    opacity:0,
-    x:36,
+    opacity: 0,
+    x: 36,
 }, {
     x: 0,
-    duration:2,
-    opacity:1,
+    duration: 2,
+    delay: 1.2,
+    opacity: 1,
     scrollTrigger: {
         trigger: ".comm1",
         start: "top bottom",
@@ -445,12 +437,13 @@ gsap.fromTo("#star7", {
 })
 
 gsap.fromTo("#star8", {
-    opacity:0,
-    x:0,
+    opacity: 0,
+    x: 0,
 }, {
     x: 0,
-    duration:1.5,
-    opacity:1,
+    duration: 1.5,
+    delay: 1.2,
+    opacity: 1,
     scrollTrigger: {
         trigger: ".comm1",
         start: "top bottom",
@@ -461,12 +454,13 @@ gsap.fromTo("#star8", {
 
 
 gsap.fromTo("#star9", {
-    opacity:0,
-    x:-36,
+    opacity: 0,
+    x: -36,
 }, {
     x: 0,
-    duration:2,
-    opacity:1,
+    duration: 2,
+    delay: 1.2,
+    opacity: 1,
     scrollTrigger: {
         trigger: ".comm1",
         start: "top bottom",
@@ -476,12 +470,13 @@ gsap.fromTo("#star9", {
 })
 
 gsap.fromTo("#star10", {
-    opacity:0,
-    x:-72,
+    opacity: 0,
+    x: -72,
 }, {
     x: 0,
-    duration:2,
-    opacity:1,
+    duration: 2,
+    delay: 1.2,
+    opacity: 1,
     scrollTrigger: {
         trigger: ".comm1",
         start: "top bottom",
@@ -490,16 +485,32 @@ gsap.fromTo("#star10", {
     }
 })
 
+
+// Troisième commentaire/avis
+
+gsap.fromTo(".comm3", {
+    opacity: 0,
+    y: 300,
+}, {
+    y: 0,
+    delay: 0.7,
+    opacity: 1,
+    duration: 1.3,
+    scrollTrigger: {
+        trigger: ".comm1",
+    }
+})
+
 gsap.fromTo("#star11", {
-    opacity:0,
-    x:50,
-    y:-50,
+    opacity: 0,
+    x: 50,
+    y: -50,
 }, {
     x: 0,
     y: 0,
-    opacity:1,
-    duration:1.2,
-    delay:1.2,
+    opacity: 1,
+    duration: 1.2,
+    delay: 2.4,
     scrollTrigger: {
         trigger: ".comm1",
         start: "top bottom",
@@ -509,15 +520,15 @@ gsap.fromTo("#star11", {
 })
 
 gsap.fromTo("#star12", {
-    opacity:0,
-    x:50,
-    y:-50,
+    opacity: 0,
+    x: 50,
+    y: -50,
 }, {
     x: 0,
     y: 0,
-    opacity:1,
-    duration:1.2,
-    delay:0.9,
+    opacity: 1,
+    duration: 1.2,
+    delay: 2.1,
     scrollTrigger: {
         trigger: ".comm1",
         start: "top bottom",
@@ -527,15 +538,15 @@ gsap.fromTo("#star12", {
 })
 
 gsap.fromTo("#star13", {
-    opacity:0,
-    x:50,
-    y:-50,
+    opacity: 0,
+    x: 50,
+    y: -50,
 }, {
     x: 0,
     y: 0,
-    opacity:1,
-    duration:1.2,
-    delay:0.6,
+    opacity: 1,
+    duration: 1.2,
+    delay: 1.8,
     scrollTrigger: {
         trigger: ".comm1",
         start: "top bottom",
@@ -545,15 +556,15 @@ gsap.fromTo("#star13", {
 })
 
 gsap.fromTo("#star14", {
-    opacity:0,
-    x:50,
-    y:-50,
+    opacity: 0,
+    x: 50,
+    y: -50,
 }, {
     x: 0,
     y: 0,
-    opacity:1,
-    duration:1.2,
-    delay:0.3,
+    opacity: 1,
+    duration: 1.2,
+    delay: 1.5,
     scrollTrigger: {
         trigger: ".comm1",
         start: "top bottom",
@@ -563,14 +574,15 @@ gsap.fromTo("#star14", {
 })
 
 gsap.fromTo("#star15", {
-    opacity:0,
-    x:50,
-    y:-50,
+    opacity: 0,
+    x: 50,
+    y: -50,
 }, {
     x: 0,
     y: 0,
-    opacity:1,
-    duration:1.2,
+    opacity: 1,
+    delay: 1.2,
+    duration: 1.2,
     scrollTrigger: {
         trigger: ".comm1",
         start: "top bottom",

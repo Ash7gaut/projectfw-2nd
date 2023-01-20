@@ -287,7 +287,7 @@ gsap.fromTo(".undertitle", {
     opacity: 1,
     duration: 1.2,
     scrollTrigger: {
-        trigger: "#mensuel",
+        trigger: "#monthly",
         start: "top bottom",
         end: "bottom 80%",
         // markers: true,

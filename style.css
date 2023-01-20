@@ -458,7 +458,8 @@ h6 {
 }
 
 
-.undertitle {
+.undertitle,
+undertitle1 {
 
     text-align: center;
     padding-top: 0;

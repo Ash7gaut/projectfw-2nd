@@ -164,22 +164,24 @@ gsap.fromTo(".photo-7, .photo-8, .photo-9", {
 
 // Partie Choisis ton plan
 
+document.addEventListener("DOMContentLoaded", function (event) {
+    gsap.to("#tablet", {
 
-gsap.to("#tablet", {
-
-    motionPath: {
-        path: "#svg path",
-        align: "#svg path",
-        alignOrigin: [0.5, 0.5],
-    },
-    ease: "none",
-    scrollTrigger: {
-        trigger: "#tablet",
-        start: "top 65%",
-        end: "bottom 90%",
-        scrub: 1,
-    },
+        motionPath: {
+            path: "#svg path",
+            align: "#svg path",
+            alignOrigin: [0.5, 0.5],
+        },
+        ease: "none",
+        scrollTrigger: {
+            trigger: "#tablet",
+            start: "top 65%",
+            end: "bottom 90%",
+            scrub: 1,
+        },
+    });
 });
+
 
 gsap.fromTo(".choosetitle", {
     opacity: 0,
@@ -221,11 +223,13 @@ gsap.to(".bgblue", {
 
 })
 
+
 gsap.to("#monthly", {
     backgroundColor: "#E1E1E1",
     transition: 5,
 
 })
+
 
 
 // Partie Vibz aussi sur mobile

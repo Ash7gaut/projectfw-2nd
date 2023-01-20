@@ -728,8 +728,12 @@ h6 {
     margin: auto;
     margin-top: 120px;
     visibility: hidden;
+    transition: 1s;
 }
 
+.logoentr:hover {
+    transform: rotate(360deg);
+}
 
 .row-comm {
     margin: auto;
@@ -799,6 +803,7 @@ h6 {
     background-color: #1d1d1d;
     color: white;
 }
+
 
 
 /* Partie Footer */

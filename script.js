@@ -3,15 +3,13 @@ $(".change").on("click", function () {
     if ($("body").hasClass("dark")) {
         $("body").removeClass("dark");
         $(".change").text("LIGHT");
+        $(".star_orange").attr("src", "images/star.svg")
     } else {
         $("body").addClass("dark");
         $(".change").text("DARK");
+        $(".star_orange").attr("src", "images/star_orange.svg")
     }
 });
-
-
-
-
 
 
 gsap.fromTo("#text-white", {

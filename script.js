@@ -181,22 +181,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
 });
 
 
-gsap.fromTo(".choosetitle", {
-    opacity: 0,
-    x: -50,
-    y: -50,
-}, {
-    x: 0,
-    y: 0,
-    opacity: 1,
-    duration: 1.2,
-    scrollTrigger: {
-        trigger: ".choosetitle",
-        start: "top bottom",
-        end: "bottom 80%",
-        // markers: true,
-    }
-})
+
 
 const timeline = gsap.timeline({ repeat: -1 });
 timeline.to(".bgblue", {
@@ -296,10 +281,38 @@ gsap.fromTo(".undertitle", {
     }
 })
 
+gsap.fromTo(".choosetitle, #trigger_undertitle", {
+    opacity: 1,
+    y: -75,
+}, {
+    y: 0,
+    opacity: 0,
+    scrollTrigger: {
+        trigger: "#trigger_undertitle",
+        start: "top 50%",
+        end: "bottom top",
+        scrub: 1,
+    },
+})
+
+
+gsap.fromTo(".choosetitle, #trigger_undertitle", {
+    opacity: 1,
+    y: -75,
+}, {
+    y: 0,
+    opacity: 0,
+    scrollTrigger: {
+        trigger: "#trigger_undertitle",
+        start: "top 50%",
+        end: "bottom top",
+        scrub: 1,
+    },
+})
+
+
 
 // Logo entreprise + Avis/Commentaires
-
-
 
 
 

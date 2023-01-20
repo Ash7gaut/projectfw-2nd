@@ -1,5 +1,17 @@
+// Body 
+$(".change").on("click", function () {
+    if ($("body").hasClass("dark")) {
+        $("body").removeClass("dark");
+        $(".change").text("LIGHT");
+    } else {
+        $("body").addClass("dark");
+        $(".change").text("DARK");
+    }
+});
 
-// Partie Home
+
+
+
 
 
 gsap.fromTo("#text-white", {

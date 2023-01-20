@@ -4,12 +4,37 @@
 body {
     margin: 0;
     padding: 0;
-    background-color: #fff;
+    background-color: #FFF;
     font-family: "Nunito", sans-serif;
     overflow-x: hidden;
     box-sizing: border-box;
 }
 
+.change {
+    cursor: pointer;
+    border: 1.2px solid wheat;
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 12px;
+    color: wheat;
+    position: fixed;
+    right: 40px;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: transparent;
+    transition: 0.3s;
+}
+
+.dark .change {
+    color: black;
+    border: 1.2px solid black;
+}
 
 #video {
     position: absolute;
@@ -50,6 +75,9 @@ body {
     background: linear-gradient(#00000000, #000000);
 }
 
+.dark .gradient {
+    background: linear-gradient(#00000000, #222222);
+}
 
 
 #header {
@@ -238,11 +266,19 @@ h6 {
 
 }
 
+.dark .main1 {
+    background-image: url(images/black_pink_split_bg_dark.png);
+}
+
 #img-white {
     background-image: url(images/white_pink_split_background.png);
     top: 0;
     margin: 0;
     background-size: 101% 101%;
+}
+
+.dark #img-white {
+    background-image: url(images/white_pink_split_bg_dark.png);
 }
 
 .godance {
@@ -291,7 +327,14 @@ h6 {
     font-size: 32px;
     font-family: "Futura";
     font-weight: 500;
+    color: black;
 }
+
+.dark .thebest {
+    color: white;
+    background-color: #a76d73;
+}
+
 
 .grid {
     display: grid;
@@ -382,6 +425,10 @@ h6 {
 
 }
 
+.dark .divthebest {
+    background-color: #a76d73;
+}
+
 
 
 
@@ -398,6 +445,11 @@ h6 {
     font-weight: 500;
     font-size: 32px;
 }
+
+.dark .choosetitle {
+    color: white;
+}
+
 
 .undertitle {
 
@@ -494,6 +546,10 @@ h6 {
 
 }
 
+.dark .price {
+    color: black;
+}
+
 .price-left {
     font-size: 50px;
     font-family: "Futura";
@@ -502,6 +558,9 @@ h6 {
 
 }
 
+.dark .price-left {
+    color: #000;
+}
 
 .pay {
     font-size: 12px;
@@ -511,12 +570,20 @@ h6 {
     margin-bottom: 20px;
 }
 
+.dark .pay {
+    color: #000;
+}
+
 .pay-left {
     font-size: 12px;
     font-family: "Futura";
     font-weight: 400;
     margin-left: 31.5px;
     margin-bottom: 20px;
+}
+
+.dark .pay-left {
+    color: #000;
 }
 
 
@@ -597,6 +664,11 @@ h6 {
     visibility: hidden;
 }
 
+.dark .vibzmobile {
+    color: white;
+}
+
+
 #tablet {
     position: absolute;
     width: 41vw;
@@ -628,6 +700,11 @@ h6 {
     text-align: center;
     height: 800px;
 }
+
+.dark .main2 {
+    background-image: url(images/trust_background_dark1.png);
+}
+
 
 .logoentr {
     width: 10vw;
@@ -663,6 +740,10 @@ h6 {
     font-weight: 800;
 }
 
+.dark .reviewtitle {
+    color: white;
+}
+
 .comm1 {
     border-radius: 5px;
     background-color: white;
@@ -670,6 +751,11 @@ h6 {
     width: 280px;
     font-size: 14px;
 
+}
+
+.dark .comm1 {
+    background-color: #1d1d1d;
+    color: white;
 }
 
 .comm2 {
@@ -680,6 +766,12 @@ h6 {
     font-size: 14px;
 }
 
+.dark .comm2 {
+    background-color: #1d1d1d;
+    color: white;
+}
+
+
 .comm3 {
     border-radius: 5px;
     background-color: white;
@@ -688,6 +780,10 @@ h6 {
     font-size: 14px;
 }
 
+.dark .comm3 {
+    background-color: #1d1d1d;
+    color: white;
+}
 
 
 /* Partie Footer */
@@ -702,6 +798,11 @@ footer {
     padding-bottom: 35px;
     padding-top: 125px;
 
+}
+
+
+.dark footer {
+    background-color: #222;
 }
 
 .tf {
@@ -720,4 +821,10 @@ footer {
     color: white;
     justify-content: center;
     align-items: center;
+}
+
+
+.dark {
+    background-color: #222;
+    color: #e6e6e6;
 }

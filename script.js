@@ -254,16 +254,6 @@ gsap.fromTo(".googlep", {
 
 
 
-gsap.to(".undertitle1", {
-    autoAlpha: 1,
-    duration: 4,
-    scrollTrigger: {
-        trigger: ".vibzmobile"
-    }
-
-})
-
-
 gsap.fromTo(".undertitle", {
     opacity: 0,
     x: 50,
